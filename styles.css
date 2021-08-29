@@ -1,0 +1,154 @@
+/* Main Body & Background */
+
+body {
+  height: 100%;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 45px;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 0 45px 0;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.date-heading {
+  text-align: center;
+}
+
+h6 {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 70px;
+  margin: 10px 0 20px 0;
+  font-weight: 800;
+  color: #142d4c;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+/* Form Styling */
+
+.weather-search-form form {
+  padding: 30px;
+  background: #fff;
+  margin: 20px 50px;
+}
+
+.weather-search-input {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  display: inline;
+  margin-bottom: 15px;
+}
+
+.weather-search-button {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn.weather-search-button {
+  border-radius: 0px;
+  background: #385170;
+  border: none;
+}
+
+/* Main Weather Highlight */
+
+.main-container .todays-weather-highlight {
+  border: none;
+  border-radius: 0px;
+}
+
+.todays-weather-highlight .icon-column {
+  text-align: right;
+}
+
+.todays-weather-icon {
+  font-size: 12rem;
+  padding: 30px 45px;
+  color: #385170;
+}
+
+.todays-weather-highlight {
+  margin: 20px 50px;
+  padding: 30px;
+}
+
+.todays-weather-highlight .card-text {
+  margin-bottom: 0px;
+}
+
+.main-container .todays-weather-city {
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+.main-container .todays-weather-country {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.main-container .todays-weather-temp {
+  font-size: 75px;
+  margin: 0;
+}
+
+/* Other Days */
+
+.main-container hr {
+  margin: 40px 75px;
+}
+
+.main-container .other-days {
+  margin: 0px 30px;
+  padding: 0px 15px;
+}
+
+.main-container .other-days-card {
+  border: none;
+  border-radius: 0px;
+  background: #142d4c;
+  color: #fff;
+}
+
+.other-days-weather-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card-title .other-days-card-title {
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.main-container .other-days-card-temp {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.other-days-card .card-text {
+  font-family: "Fira Sans", sans-serif;
+}
