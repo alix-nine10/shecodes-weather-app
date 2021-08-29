@@ -156,8 +156,10 @@ h2 {
 /* Footer */
 .footer-link-column {
     text-align: center;
+    margin-top: 15px;
 }
 
 .footer-link{
     font-family: monospace;
+    color: #142d4c;
 }
