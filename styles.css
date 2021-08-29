@@ -152,3 +152,12 @@ h2 {
 .other-days-card .card-text {
   font-family: "Fira Sans", sans-serif;
 }
+
+/* Footer */
+.footer-link-column {
+    text-align: center;
+}
+
+.footer-link{
+    font-family: monospace;
+}
