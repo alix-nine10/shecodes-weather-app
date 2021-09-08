@@ -11,6 +11,7 @@ body {
 .main-container {
   background: rgba(255, 255, 255, 0.8);
   padding: 20px 0 45px 0;
+  max-width: 1140px;
 }
 
 /* Typography */
@@ -155,11 +156,11 @@ h2 {
 
 /* Footer */
 .footer-link-column {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.footer-link{
-    font-family: monospace;
-    color: #142d4c;
+.footer-link {
+  font-family: monospace;
+  color: #142d4c;
 }
