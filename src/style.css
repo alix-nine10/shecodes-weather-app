@@ -1,9 +1,9 @@
 /* Main Body & Background */
 
 .main-container {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px 0 45px 0;
-  margin: 60px auto;
+  background: #fcfafc;
+  padding: 30px;
+  margin: 30px auto;
   max-width: 800px;
 }
 
@@ -13,6 +13,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 45px;
+}
+
+.card {
+  background-color: none;
 }
 
 /* Typography */
@@ -50,8 +54,7 @@ h2 {
 /* Form Styling */
 
 .weather-search-form form {
-  background: #fff;
-  margin: 20px 50px;
+  margin: 20px 0px;
 }
 
 .weather-search-input {
@@ -79,30 +82,26 @@ h2 {
 .main-container .todays-weather-highlight {
   border: none;
   border-radius: 0px;
+  background: none;
 }
 
+.todays-weather-highlight .temp-column,
 .todays-weather-highlight .icon-column {
   text-align: right;
 }
 
 .todays-weather-icon {
-  font-size: 12rem;
-  padding: 30px 45px;
+  font-size: 5rem;
   color: #385170;
 }
 
 .todays-weather-highlight {
-  margin: 20px 50px;
-  padding: 30px;
-}
-
-.todays-weather-highlight .card-text {
   margin-bottom: 0px;
 }
 
 .main-container .todays-weather-city {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .main-container .todays-weather-country {
@@ -112,26 +111,23 @@ h2 {
 }
 
 .main-container .todays-weather-temp {
-  font-size: 75px;
+  font-size: 50px;
   margin: 0;
 }
 
 /* Other Days */
 
 .main-container hr {
-  margin: 40px 75px;
+  margin: 50px 75px;
 }
 
-.main-container .other-days {
-  margin: 0px 30px;
-  padding: 0px 15px;
-}
-
-.main-container .other-days-card {
+.other-days-card {
   border: none;
   border-radius: 0px;
   background: #142d4c;
   color: #fff;
+  padding: 15px 10px 5px 10px;
+  text-align: center;
 }
 
 .other-days-weather-icon {
@@ -146,7 +142,7 @@ h2 {
 
 .main-container .other-days-card-temp {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 0px;
 }
 
