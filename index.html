@@ -32,120 +32,124 @@
     />
   </head>
   <body>
-    <div class="container main-container">
-      <h1>Today's Weather</h1>
-      <h5 id="date-heading" class="date-heading">test</h5>
-      <div class="weather-search-form">
-        <form id="search-form">
-          <div class="form-row">
-            <div class="col-8">
-              <input
-                type="text"
-                class="form-control weather-search-input"
-                placeholder="Search for a city..."
-                id="search-form-input"
-              />
+    <div class="main-container">
+      <div class="container">
+        <h1>Today's Weather</h1>
+        <h5 id="date-heading" class="date-heading">test</h5>
+        <div class="weather-search-form">
+          <form id="search-form">
+            <div class="form-row">
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control weather-search-input"
+                  placeholder="Search for a city..."
+                  id="search-form-input"
+                />
+              </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary btn-block weather-search-button"
+                  id="search-form-button"
+                />
+              </div>
             </div>
-            <div class="col-4">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-primary btn-block weather-search-button"
-                id="search-form-button"
-              />
-            </div>
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
 
-      <div class="card todays-weather-highlight">
-        <div class="row no-gutters">
-          <div class="col-md-6 icon-column">
-            <i class="fas fa-cloud-sun todays-weather-icon"></i>
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h4
-                class="card-title todays-weather-city"
-                id="todays-weather-city-name"
-              >
-                Vancouver
-              </h4>
-              <p class="card-text">
-                <small class="text-muted todays-weather-country"
-                  >British Columbia, Canada</small
+        <div class="card todays-weather-highlight">
+          <div class="row no-gutters">
+            <div class="col-md-6 icon-column">
+              <i class="fas fa-cloud-sun todays-weather-icon"></i>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h4
+                  class="card-title todays-weather-city"
+                  id="todays-weather-city-name"
                 >
-              </p>
-              <h2 class="card-title todays-weather-temp">23°C</h2>
-              <p class="card-text"><strong>25°</strong> | 12°</p>
+                  Vancouver
+                </h4>
+                <p class="card-text">
+                  <small class="text-muted todays-weather-country"
+                    >British Columbia, Canada</small
+                  >
+                </p>
+                <h2 class="card-title todays-weather-temp">23°C</h2>
+                <p class="card-text"><strong>25°</strong> | 12°</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr />
+        <hr />
 
-      <div class="row other-days">
-        <div class="col">
-          <div class="card text-center other-days-card">
-            <div class="card-body">
-              <h6 class="card-title other-days-card-title">Monday</h6>
-              <i class="fas fa-cloud-sun other-days-weather-icon"></i>
-              <h3 class="card-title other-days-card-temp">23°</h3>
-              <p class="card-text"><strong>25°</strong> | 12°</p>
+        <div class="row other-days">
+          <div class="col">
+            <div class="card text-center other-days-card">
+              <div class="card-body">
+                <h6 class="card-title other-days-card-title">Monday</h6>
+                <i class="fas fa-cloud-sun other-days-weather-icon"></i>
+                <h3 class="card-title other-days-card-temp">23°</h3>
+                <p class="card-text"><strong>25°</strong> | 12°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center other-days-card">
+              <div class="card-body">
+                <h6 class="card-title other-days-card-title">Tuesday</h6>
+                <i class="fas fa-sun other-days-weather-icon"></i>
+                <h3 class="card-title other-days-card-temp">20°</h3>
+                <p class="card-text"><strong>22°</strong> | 15°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center other-days-card">
+              <div class="card-body">
+                <h6 class="card-title other-days-card-title">Wednesday</h6>
+                <i class="fas fa-sun other-days-weather-icon"></i>
+                <h3 class="card-title other-days-card-temp">21°</h3>
+                <p class="card-text"><strong>21°</strong> | 19°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center other-days-card">
+              <div class="card-body">
+                <h6 class="card-title other-days-card-title">Thursday</h6>
+                <i class="fas fa-cloud-sun other-days-weather-icon"></i>
+                <h3 class="card-title other-days-card-temp">23°</h3>
+                <p class="card-text"><strong>26°</strong> | 19°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center other-days-card">
+              <div class="card-body">
+                <h6 class="card-title other-days-card-title">Friday</h6>
+                <i
+                  class="fas fa-cloud-showers-heavy other-days-weather-icon"
+                ></i>
+                <h3 class="card-title other-days-card-temp">18°</h3>
+                <p class="card-text"><strong>19°</strong> | 12°</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card text-center other-days-card">
-            <div class="card-body">
-              <h6 class="card-title other-days-card-title">Tuesday</h6>
-              <i class="fas fa-sun other-days-weather-icon"></i>
-              <h3 class="card-title other-days-card-temp">20°</h3>
-              <p class="card-text"><strong>22°</strong> | 15°</p>
-            </div>
+        <div>
+          <div class="col-12 footer-link-column">
+            <p>
+              <a
+                class="footer-link"
+                href="https://github.com/alix-nine10/shecodes-weather-app.git"
+                target="_blank"
+                >Code from GitHub</a
+              >
+            </p>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center other-days-card">
-            <div class="card-body">
-              <h6 class="card-title other-days-card-title">Wednesday</h6>
-              <i class="fas fa-sun other-days-weather-icon"></i>
-              <h3 class="card-title other-days-card-temp">21°</h3>
-              <p class="card-text"><strong>21°</strong> | 19°</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center other-days-card">
-            <div class="card-body">
-              <h6 class="card-title other-days-card-title">Thursday</h6>
-              <i class="fas fa-cloud-sun other-days-weather-icon"></i>
-              <h3 class="card-title other-days-card-temp">23°</h3>
-              <p class="card-text"><strong>26°</strong> | 19°</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center other-days-card">
-            <div class="card-body">
-              <h6 class="card-title other-days-card-title">Friday</h6>
-              <i class="fas fa-cloud-showers-heavy other-days-weather-icon"></i>
-              <h3 class="card-title other-days-card-temp">18°</h3>
-              <p class="card-text"><strong>19°</strong> | 12°</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="col-12 footer-link-column">
-          <p>
-            <a
-              class="footer-link"
-              href="https://github.com/alix-nine10/shecodes-weather-app.git"
-              target="_blank"
-              >Code from GitHub</a
-            >
-          </p>
         </div>
       </div>
     </div>
