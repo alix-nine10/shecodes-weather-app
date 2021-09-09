@@ -1,17 +1,17 @@
 /* Main Body & Background */
 
+.main-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 0 45px 0;
+  max-width: 800px;
+}
+
 body {
   height: 100%;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 45px;
-}
-
-.main-container {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px 0 45px 0;
-  max-width: 800px;
 }
 
 /* Typography */
