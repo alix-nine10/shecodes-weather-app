@@ -3,6 +3,7 @@
 .main-container {
   background: rgba(255, 255, 255, 0.8);
   padding: 30px 0 45px 0;
+  margin: 60px auto;
   max-width: 800px;
 }
 
