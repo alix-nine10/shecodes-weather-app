@@ -10,8 +10,8 @@ body {
 
 .main-container {
   background: rgba(255, 255, 255, 0.8);
-  padding: 20px 0 45px 0;
-  max-width: 1140px;
+  padding: 30px 0 45px 0;
+  max-width: 800px;
 }
 
 /* Typography */
@@ -33,11 +33,11 @@ h6 {
   text-transform: uppercase;
 }
 
-.main-container h1 {
+h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 70px;
-  margin: 10px 0 20px 0;
+  font-size: 37px;
+  margin: 10px 0 10px 0;
   font-weight: 800;
   color: #142d4c;
 }
@@ -49,7 +49,6 @@ h2 {
 /* Form Styling */
 
 .weather-search-form form {
-  padding: 30px;
   background: #fff;
   margin: 20px 50px;
 }
