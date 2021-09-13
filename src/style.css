@@ -9,7 +9,8 @@
 
 body {
   height: 100%;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+  background-image: url("Images/sky-background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 45px;
