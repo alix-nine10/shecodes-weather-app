@@ -16,7 +16,7 @@ searchForm.addEventListener("submit", showSearch);
 function showTemp(response) {
   console.log(response.data.main.temp);
   let tempRounded = Math.round(response.data.main.temp);
-  let tempElement = document.querySelector("#todays-temp");
+  let tempElement = document.querySelector("#todays-weather-temp");
   tempElement.innerHTML = `${tempRounded}°C`;
 }
 
