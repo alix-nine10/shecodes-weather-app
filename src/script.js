@@ -1,25 +1,3 @@
-function showSearch(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#search-form-input");
-  let cityHeading = document.querySelector("#todays-weather-city-name");
-
-  cityHeading.innerHTML = `${searchInput.value}`;
-  let apiKey = "4c4c2b7230f2b0c08d2e63af702d9fec";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&units=metric`;
-
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
-}
-
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", showSearch);
-
-function showTemp(response) {
-  console.log(response.data.main.temp);
-  let tempRounded = Math.round(response.data.main.temp);
-  let tempElement = document.querySelector("#todays-temp");
-  tempElement.innerHTML = `${tempRounded}°C`;
-}
-
 function showDateTime() {
   let h5 = document.querySelector("#date-heading");
   let today = new Date();
@@ -36,3 +14,38 @@ function showDateTime() {
 }
 
 showDateTime();
+
+function showSearch(response) {
+  let cityHeading = document.querySelector("#todays-weather-city-name");
+  let tempRounded = Math.round(response.data.main.temp);
+  let tempElement = document.querySelector("#todays-temp");
+  let descriptionHeading = document.querySelector("#todays-weather-type-name");
+  let tempHigh = document.querySelector("#todays-temp-high");
+  let tempLow = document.querySelector("#todays-temp-low");
+  let tempHighRounded = Math.round(response.data.main.temp_max);
+  let tempLowRounded = Math.round(response.data.main.temp_min);
+
+  tempElement.innerHTML = `${tempRounded}°C`;
+  tempHigh.innerHTML = `${tempHighRounded}°`;
+  tempLow.innerHTML = `${tempLowRounded}°`;
+  descriptionHeading.innerHTML = response.data.weather[0].main;
+  tempHigh = console.log(response);
+  cityHeading.innerHTML = response.data.name;
+}
+
+function search(city) {
+  let apiKey = "4c4c2b7230f2b0c08d2e63af702d9fec";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showSearch);
+}
+
+function defaultSubmit(event) {
+  event.preventDefault();
+  let searchForm = document.querySelector("#search-form-input");
+  search(searchForm.value);
+}
+
+let weatherForm = document.querySelector("#search-form");
+weatherForm.addEventListener("submit", defaultSubmit);
+
+search("Vancouver");
