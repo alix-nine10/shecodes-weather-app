@@ -1,7 +1,7 @@
 /* Main Body & Background */
 
 .main-container {
-  background: #fcfafc;
+  background: rgba(252, 250, 252, 0.8);
   padding: 30px;
   margin: 30px auto;
   max-width: 800px;
@@ -10,10 +10,13 @@
 body {
   height: 100%;
   /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
-  background-image: url("images/sky-background.jpg");
+  background-image: url("Images/davies-designs-studio-f5_lfi2S-d4-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   padding: 45px;
+  /* backdrop-filter: brightness(1.5); */
 }
 
 .card {
@@ -27,7 +30,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Urbanist", sans-serif;
   margin: 0px;
 }
 .date-heading {
@@ -35,21 +38,21 @@ h5 {
 }
 
 h6 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
   text-transform: uppercase;
 }
 
-h1 {
+.main-container h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 37px;
   margin: 10px 0 10px 0;
-  font-weight: 800;
-  color: #142d4c;
+  font-weight: 700;
+  color: #4d5877;
 }
 
-h2 {
-  font-weight: 800;
+.main-container h2 {
+  font-weight: 700;
 }
 
 /* Form Styling */
@@ -59,14 +62,14 @@ h2 {
 }
 
 .weather-search-input {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-style: italic;
   display: inline;
   margin-bottom: 15px;
 }
 
 .weather-search-button {
-  font-family: "Rubik", sans-serif;
+  font-family: "Urbanist", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -74,7 +77,7 @@ h2 {
 
 .btn.weather-search-button {
   border-radius: 0px;
-  background: #385170;
+  background: #576687;
   border: none;
 }
 
@@ -93,20 +96,24 @@ h2 {
 
 .todays-weather-icon {
   font-size: 5rem;
-  color: #385170;
 }
 
 .todays-weather-highlight {
   margin-bottom: 0px;
 }
 
+.temp-column p {
+  color: #e6c6b7;
+}
+
 .main-container .todays-weather-city {
   margin-bottom: 0;
   font-size: 50px;
+  font-weight: 700;
 }
 
 .main-container .todays-weather-country {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-style: italic;
   margin-bottom: 0px;
 }
@@ -114,18 +121,19 @@ h2 {
 .main-container .todays-weather-temp {
   font-size: 50px;
   margin: 0;
+  font-weight: 700;
 }
 
 /* Other Days */
 
 .main-container hr {
-  margin: 50px 75px;
+  margin: 35px 75px 50px 75px;
 }
 
 .other-days-card {
   border: none;
   border-radius: 0px;
-  background: #142d4c;
+  background: #576687;
   color: #fff;
   padding: 15px 10px 5px 10px;
   text-align: center;
@@ -138,7 +146,7 @@ h2 {
 
 .card-title .other-days-card-title {
   font-size: 24px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .main-container .other-days-card-temp {
@@ -148,7 +156,7 @@ h2 {
 }
 
 .other-days-card .card-text {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 /* Footer */
@@ -159,5 +167,5 @@ h2 {
 
 .footer-link {
   font-family: monospace;
-  color: #142d4c;
+  color: #576687;
 }
