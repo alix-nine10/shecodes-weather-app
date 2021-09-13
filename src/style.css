@@ -9,7 +9,6 @@
 
 body {
   height: 100%;
-  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
   background-image: url("Images/davies-designs-studio-f5_lfi2S-d4-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -100,10 +99,6 @@ h6 {
 
 .todays-weather-highlight {
   margin-bottom: 0px;
-}
-
-.temp-column p {
-  color: #e6c6b7;
 }
 
 .main-container .todays-weather-city {
