@@ -32,6 +32,7 @@ function showSearch(response) {
   let tempLow = document.querySelector("#todays-temp-low");
   let tempHighRounded = Math.round(response.data.main.temp_max);
   let tempLowRounded = Math.round(response.data.main.temp_min);
+  let weatherIcon = document.querySelector("#weather-icon");
 
   tempElement.innerHTML = `${tempRounded}°C`;
   tempHigh.innerHTML = `${tempHighRounded}°`;
@@ -39,6 +40,11 @@ function showSearch(response) {
   descriptionHeading.innerHTML = response.data.weather[0].main;
   tempHigh = console.log(response);
   cityHeading.innerHTML = response.data.name;
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
