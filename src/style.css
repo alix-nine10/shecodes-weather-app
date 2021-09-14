@@ -1,7 +1,7 @@
 /* Main Body & Background */
 
 .main-container {
-  background: rgba(252, 250, 252, 0.8);
+  background: rgba(245, 244, 245, 0.8);
   padding: 30px;
   margin: 30px auto;
   max-width: 800px;
@@ -78,6 +78,11 @@ h6 {
   border-radius: 0px;
   background: #576687;
   border: none;
+}
+
+.btn.weather-search-button:hover,
+.btn.weather-search-button:active {
+  background: #465576;
 }
 
 /* Main Weather Highlight */
