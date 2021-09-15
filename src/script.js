@@ -34,6 +34,8 @@ function showSearch(response) {
   let tempLowRounded = Math.round(response.data.main.temp_min);
   let weatherIcon = document.querySelector("#weather-icon");
 
+  celsiusTemp = response.data.main.temp;
+
   tempElement.innerHTML = `${tempRounded}°C`;
   tempHigh.innerHTML = `${tempHighRounded}°`;
   tempLow.innerHTML = `${tempLowRounded}°`;
@@ -59,7 +61,28 @@ function defaultSubmit(event) {
   search(searchForm.value);
 }
 
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let tempElement = document.querySelector("#todays-temp");
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#todays-temp");
+  tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
 let weatherForm = document.querySelector("#search-form");
 weatherForm.addEventListener("submit", defaultSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Vancouver");

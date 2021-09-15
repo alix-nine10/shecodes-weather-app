@@ -85,6 +85,10 @@ h6 {
   background: #465576;
 }
 
+.units {
+  text-align: center;
+}
+
 /* Main Weather Highlight */
 
 .main-container .todays-weather-highlight {
