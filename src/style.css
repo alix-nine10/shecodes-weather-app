@@ -87,6 +87,22 @@ h6 {
 
 .units {
   text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.units a {
+  color: #576687;
+}
+
+.units .active {
+  color: #000;
+  cursor: default;
+}
+
+.units a:hover {
+  text-decoration: none;
+  color: #6c757d;
 }
 
 /* Main Weather Highlight */

@@ -63,15 +63,23 @@ function defaultSubmit(event) {
 
 function displayFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   let tempElement = document.querySelector("#todays-temp");
-  tempElement.innerHTML = Math.round(fahrenheitTemp);
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let fTempRounded = Math.round(fahrenheitTemp);
+  tempElement.innerHTML = `${fTempRounded}°F`;
 }
 
 function displayCelsiusTemp(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#todays-temp");
-  tempElement.innerHTML = Math.round(celsiusTemp);
+
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  let cTempRounded = Math.round(celsiusTemp);
+  tempElement.innerHTML = `${cTempRounded}°C`;
 }
 
 let celsiusTemp = null;
