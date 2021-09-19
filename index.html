@@ -70,22 +70,22 @@
         <div class="todays-weather-highlight">
           <div class="row">
             <div class="col-md-6 city-column">
-              <h4 class="todays-weather-city" id="todays-weather-city-name">
-                Vancouver
-              </h4>
-              <p>
-                <small
-                  class="text-muted todays-weather-type"
-                  id="todays-weather-type-name"
-                  >Cloudy</small
-                >
+              <h4
+                class="todays-weather-city"
+                id="todays-weather-city-name"
+              ></h4>
+              <p class="text-muted todays-weather-type">
+                <strong>Weather: </strong
+                ><span id="todays-weather-type-name"></span> |
+                <strong>Wind Speed: </strong
+                ><span id="todays-weather-windspeed"></span>
               </p>
             </div>
             <div class="col-md-4 temp-column">
-              <h2 class="todays-weather-temp" id="todays-temp">23</h2>
+              <h2 class="todays-weather-temp" id="todays-temp"></h2>
               <p>
-                <strong><span id="todays-temp-high">25°</span></strong> |
-                <span id="todays-temp-low">12°</span>
+                <strong><span id="todays-temp-high"></span></strong> |
+                <span id="todays-temp-low"></span>
               </p>
             </div>
             <div class="col-md-2 icon-column">
@@ -95,14 +95,22 @@
         </div>
         <hr />
         <div class="weather-forecast" id="forecast"></div>
-        <div>
+        <div class="footer">
           <div class="col-12 footer-link-column">
             <p>
+              Coded by
+              <a
+                href="https://www.instagram.com/acreativeal/"
+                target="_blank"
+                alt="instagram"
+                class="footer-link"
+                >Alix Johnson</a
+              >. Code stored on
               <a
                 class="footer-link"
                 href="https://github.com/alix-nine10/shecodes-weather-app.git"
                 target="_blank"
-                >Code from GitHub</a
+                >GitHub</a
               >
             </p>
           </div>

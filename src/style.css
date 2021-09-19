@@ -128,7 +128,6 @@ h6 {
 
 .main-container .todays-weather-type {
   font-family: "Urbanist", sans-serif;
-  font-style: italic;
   margin-bottom: 0px;
 }
 
@@ -171,12 +170,17 @@ h6 {
 }
 
 /* Footer */
+.footer {
+  margin-top: 45px;
+}
+
 .footer-link-column {
   text-align: center;
   margin-top: 15px;
+  font-family: monospace;
+  color: #7c7c7c;
 }
 
 .footer-link {
-  font-family: monospace;
-  color: #576687;
+  color: #ec6e4d;
 }

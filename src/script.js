@@ -87,6 +87,8 @@ function showSearch(response) {
   let tempRounded = Math.round(response.data.main.temp);
   let tempElement = document.querySelector("#todays-temp");
   let descriptionHeading = document.querySelector("#todays-weather-type-name");
+  let windSpeed = document.querySelector("#todays-weather-windspeed");
+  let windSpeedKms = Math.round(response.data.wind.speed * 3.6);
   let tempHigh = document.querySelector("#todays-temp-high");
   let tempLow = document.querySelector("#todays-temp-low");
   let tempHighRounded = Math.round(response.data.main.temp_max);
@@ -99,13 +101,14 @@ function showSearch(response) {
   tempHigh.innerHTML = `${tempHighRounded}°`;
   tempLow.innerHTML = `${tempLowRounded}°`;
   descriptionHeading.innerHTML = response.data.weather[0].main;
-  tempHigh = console.log(response);
   cityHeading.innerHTML = response.data.name;
   weatherIcon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
+  windSpeed.innerHTML = `${windSpeedKms}km/hour`;
+  console.log(response.data);
 
   getForecast(response.data.coord);
 }
