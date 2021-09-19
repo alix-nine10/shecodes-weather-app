@@ -145,33 +145,35 @@ h6 {
   margin: 35px 75px 50px 75px;
 }
 
-.other-days-card {
+.forecast-days-column {
   border: none;
   border-radius: 0px;
   background: #576687;
   color: #fff;
-  padding: 15px 10px 5px 10px;
+  padding: 5px 10px 10px 10px;
   text-align: center;
 }
 
-.other-days-weather-icon {
-  font-size: 30px;
-  margin-bottom: 10px;
+#forecast-icon {
+  max-width: 60px;
 }
 
-.card-title .other-days-card-title {
-  font-size: 24px;
+.forecast-day-title {
+  font-size: 18px;
   font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  margin: 0px 0px 8px 0;
 }
 
-.main-container .other-days-card-temp {
+.forecast-temp {
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
-.other-days-card .card-text {
+#forecast-high-low-temp {
   font-family: "Urbanist", sans-serif;
+  font-size: 14px;
 }
 
 /* Footer */
