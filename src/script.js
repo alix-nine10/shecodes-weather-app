@@ -123,6 +123,8 @@ function defaultSubmit(event) {
   event.preventDefault();
   let searchForm = document.querySelector("#search-form-input");
   search(searchForm.value);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function displayFahrenheitTemp(event) {
